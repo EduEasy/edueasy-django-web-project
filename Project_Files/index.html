@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Your Coding Skills With Edu-Easy</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+</head>
+
+<body>
+    <div class="img">
+        <input type="checkbox" name="check" id="ham">
+        <div class="menu-bar" id="navigation">
+            <div class="logo-links">
+                <div class="logo">
+                    <a href="/"><img src="{% static 'logo.png' %}" alt=""></a>
+                </div>
+                <div class="links">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/courses" class="course-drop">Courses <i
+                                        class="fa fa-chevron-down main"></i></a>
+                                <div class="drop-down">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="/pythonforbeginners">Python For Beginners</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+
+                            <li><a href="/resources" class="course-drop">Resources <i
+                                        class="fa fa-chevron-down main"></i></a>
+                                <div class="drop-down">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Free Notes PDF</a></li>
+                                            <li><a href="#">Chapter-Wise Notes</a></li>
+                                            <li><a href="#">Exercises</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </li>
+
+
+                            <li><a href="/aboutus">About</a></li>
+                            <li><a href="/contactus">Contact</a></li>
+                            <li id="login"><a href="/login">Login</a></li>
+                            <li id="sign-up"><a href="/signup">Sign Up</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="login-signup">
+                <button><a href="/login">Login</a>/<a href="/signup">Sign Up</a></button>
+                <label for="ham">
+                    <i class="fa fa-hamburger ham-bur" id="ham"></i>
+                    <i class="fa fa-xmark" id="cross-mark"></i>
+                </label>
+            </div>
+        </div>
+
+        <section class="hometext" id="htext">
+            <h2>Learning to code is learning to <br> create and innovate. || <span class="typed-text"></span><span
+                    class="cursor blink">&nbsp;</span></h2><br>
+            <p>Are you finding courses for programming? Don't worry.<br> We are here to provide best programming courses
+                with <span style="color: orange;">Free of Cost</span><br> without any compromise in the quality of
+                courses.<br> We always tried to teach coding in a unique and innovate way. <br> So why wait? Enroll now
+                in
+                our free course to power your programming skills.</p>
+            <div class="ss">
+                <a href="/signup"><button id="su-p">Sign Up</button></a>
+                <input type="search" placeholder="Search your skill booster">
+            </div>
+        </section>
+    </div>
+
+    <section class="popular-course">
+        <h5>Top Entity</h5>
+        <h1>Popular Courses</h1><span class="cursor-blink">&nbsp;</span>
+        <p>Do you want to master your favourite programming language for free?Don't worry. Edu-Easy is perfect place for
+            it. We helps you in learning awesome technologies in free with best coding mentors.So are you ready?Enroll
+            Now.</p>
+        <a href="/courses"><button id="vc">View Courses</button></a>
+        <div class="course-box">
+            <div class="course">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4EuCLvmDmTzGNnScEGnc7nstjr2TKtPOfce35HraYg&usqp=CAU&ec=48665701"
+                    alt="Error">
+                <div class="details">
+                    <h4>Free Course</h4>
+                    <h3>Python For Beginners</h3>
+                    <p>Python, which is known for its easy syntaxes is wide used programming language now-a-days. Python
+                        enhanced the field of computer science and it provide some awesome and advanced features like
+                        AI, Data Science etc.Our program is basis on only practical. In this program, you
+                        will get also some free notes which ensures your revision.</p>
+                    <a href="/pythonforbeginners"><button id="p1">Start Watching</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="form" id="cform">
+            <form action="/callus" method="get">
+                <h3>Stay with us</h3>
+                <label for="name">Name<span style="color: red;">*</span></label>
+                <input type="text" placeholder="Ex.admin" required name="name">
+                <label for="email">Email<span style="color: red;">*</span></label>
+                <input type="email" placeholder="Ex.admin@demo.com" required name="email">
+                <label for="message">Message<span style="color: red;">*</span></label>
+                <textarea placeholder="Message" required id="msg" name="msg"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="about" id="aboutowner">
+        <h2>Who Am I?</h2>
+        <div class="image">
+            <img src="{% static 'owner.jpg' %}" alt="">
+        </div>
+        <div class="abouttext">
+            <p>Hello, everyone! My name is DGSushant, and I'm a 16-year-old aspiring software engineer. I have a passion
+                for technology and a strong desire to make a positive impact in the world of programming and hacking.
+                That's why I've started a platform called Edu-Easy.
+
+                Edu-Easy is a platform where I provide free courses on programming and hacking. I believe that knowledge
+                should be accessible to everyone, regardless of their background or financial situation. Through
+                Edu-Easy, I aim to empower individuals with the skills and knowledge they need to pursue their dreams in
+                the field of technology.
+
+                As a young learner myself, I understand the challenges that many students face when starting their
+                journey into programming. That's why I strive to create engaging and easy-to-understand courses that
+                break down complex concepts into bite-sized lessons. I want to make learning fun and accessible for
+                everyone.
+
+                My goal is not only to teach programming and hacking but also to inspire others to explore the endless
+                possibilities that technology offers. I believe that with the right skills and mindset, we can shape the
+                future and bring about positive change in our society.
+
+                I invite you all to join me on this exciting journey of learning and growth. Let's navigate the world of
+                programming and hacking together, pushing boundaries, and unlocking our potential. Together, we can make
+                a difference and pave the way for a brighter future.</p>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <i class="fa fa-code"></i>
+                <h4>Coder</h4>
+                <p>DGSushant, a talented programmer, is paving the way to a digital future. With a passion for coding
+                    and hacking, he aims to create innovative solutions. His dedication, expertise, and commitment to
+                    continuous learning make him a valuable asset in the world of technology. As he always empowers that
+                    Coding Is Junoon.</p>
+            </div>
+            <div class="feature">
+                <i class="fa fa-chalkboard-user"></i>
+                <h4>Mentor</h4>
+                <p>DGSushant, a coding mentor par excellence, empowers aspiring programmers with his expertise. With a
+                    patient and supportive approach, he guides students through the intricacies of coding, helping them
+                    unlock their potential. His mentorship inspires a new generation of skilled and confident
+                    programmers.</p>
+            </div>
+            <div class="feature">
+                <i class="fa fa-laptop-code"></i>
+                <h4>Software Developer</h4>
+                <p>DGSushant, a skilled software developer, brings creativity and expertise to every project. With a
+                    strong grasp of programming languages and frameworks, he consistently delivers high-quality
+                    solutions. His commitment to innovation and problem-solving sets him apart in the field of software
+                    development.
+                <p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Links</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="/aboutus">About</a></li>
+                                <li><a href="/contactus">Contact</a></li>
+                                <li><a href="/courses">Courses</a></li>
+                                <li><a href="/resources">Resources</a></li>
+                                <li><a href="/">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Courses</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="/pythonforbeginners">Python For Beginners</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Resources</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Free Notes Download</a></li>
+                                <li><a href="#">Chapter-Wise Notes Download</a></li>
+                                <li><a href="#">Quizes</a></li>
+                                <li><a href="#">Exercises</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#"><i class="fa fa-phone"></i> 91 - 8267874664</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i> 91 - 7302529528</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> edueasyiseplofficial@gmail.com</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i> sushantchahar84@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                            style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Follow Us</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
+                                <a href="#" class="fab fa-instagram"></a>
+                                <a href="#" class="fab fa-whatsapp"></a>
+                                <a href="#" class="fab fa-discord"></a>
+                                <a href="#" class="fab fa-youtube"></a>
+                                <a href="#" class="fab fa-github"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">©Edu-Easy, All Rights are Reserved, 2023,</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p>Developed & Designed by <a href="index.html#aboutowner" style="color: blue;">DGSushant</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="{% static 'logic.js' %}"></script>
+<script src="https://kit.fontawesome.com/8d3f65e0cd.js" crossorigin="anonymous"></script>
+<script>
+    
+</script>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your account | Edu-Easy</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+    *, ::after, ::before {
+        box-sizing: unset;
+    }
+    </style>
+</head>
+
+<body>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message: </strong> {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <section class="signupbg"></section>
+    <section class="loginform">
+        <form action="/register" method="post">
+            {% csrf_token %}
+            <div class="logoimg">
+                <img src="{% static 'favicon.png' %}" alt="">
+            </div>
+            <div class="formcontent">
+                <h3>Welcome To Edu-Easy!!<br> Create Your Account</h3>
+                <label for="name">First Name</label>
+                <input type="text" id="name" placeholder="Ex.Jack" name="f-name" style="font-family: 'Roboto Condensed', sans-serif;">
+                <label for="name">Last Name</label>
+                <input type="text" id="name" placeholder="Ex.William" name="l-name" style="font-family: 'Roboto Condensed', sans-serif;">
+                <label for="name">Username</label>
+                <input type="text" id="name" placeholder="Ex.jackwilliam" name="username" style="font-family: 'Roboto Condensed', sans-serif;">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Ex.demoemail.com" id="email" name="email" style="font-family: 'Roboto Condensed', sans-serif;">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Ex.demo123@" id="password" name="password" style="font-family: 'Roboto Condensed', sans-serif;">
+                <label for="re-password">Confirm Password</label>
+                <input type="password" id="re-password" placeholder="Ex.demo123@" id="re_password" name="repassword" style="font-family: 'Roboto Condensed', sans-serif;">
+                <button type="submit">Register Now</button>
+
+                <h3 style="font-size: 1.2em;">Or</h3>
+
+                <h3 style="font-size: 1.3em;">Sign Up With</h3>
+                <div class="plat">
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+                <h4>Already have an account? <a href="/login" style="color: purple; text-decoration: none;">Login now</a></h4>
+            </div>
+        </form>
+    </section>
+</body>
+<script src="{% static 'logic.js' %}"></script>
+<script src="https://kit.fontawesome.com/8d3f65e0cd.js" crossorigin="anonymous"></script>
+
+</html>
